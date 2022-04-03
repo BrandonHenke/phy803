@@ -1,0 +1,17 @@
+\ProvidesPackage{sectionstyle}
+
+\usepackage{sectsty}
+
+
+\setcounter{secnumdepth}{3}
+
+\sectionfont{\fontsize{10}{15}\selectfont\MakeUppercase}
+\subsectionfont{\fontsize{10}{15}\selectfont}
+\subsubsectionfont{\fontsize{10}{15}\selectfont\itshape}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\renewcommand{\thesubsubsection}{\Roman{subsubsection}}
+
+
+\endinput
