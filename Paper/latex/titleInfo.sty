@@ -1,0 +1,35 @@
+\ProvidesPackage{titleinfo}
+\usepackage[
+    blocks,
+    affil-it
+]{authblk}
+
+
+\setlength{\affilsep}{0em}
+
+\newcommand{\titleinf}{%
+
+% ===== Set Title =====
+\newcommand{\thetitle}{Summary of\\
+\textit{Hadronic-vacuum-polarization contribution to the muon’s anomalous magnetic
+moment from four-flavor lattice QCD}\cite{Davies_2020}}
+\title{\thetitle}
+
+% ===== Set Authors and Affils =====
+\author[1]{Brandon Henke}
+\affil[1]{Michigan State University - Department of Physics \& Astronomy}
+
+% ===== Set Date =====
+\date{February 23, 2022}
+
+% ===== Set Abstract =====
+\newcommand{\theabstract}{%
+}
+
+\newcommand{\printabstract}[1]{%
+\ifdefempty{##1}{}{\abstract{\noindent##1}}
+}
+
+}
+
+\endinput

@@ -1,0 +1,71 @@
+\documentclass[
+a4paper,
+10pt,
+twoside,
+prd,
+aps,
+nofootinbib,
+superscriptaddress,
+floatfix,
+preprintnumbers,
+]{article}
+
+
+\usepackage{preamble}
+\usepackage{titleinfo}
+
+\geometry{ % Set document margins
+	top     = 2cm,
+	bottom  = 2cm,
+	left    = 1cm,
+	right   = 1cm
+}
+
+\newcommand{\mcols}{2} % Choose number of columns (>= 1)
+
+
+\bibSetup{refs.bib} % Give references file
+
+% ===== Format headers & footers =====
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{B. Henke}
+\fancyhead[LO]{\thetitle\hspace{0.5cm}\textit{PHY803}}
+\fancyhead[RE]{\textit{PHY803}\hspace{0.5cm}\thetitle}
+\fancyfoot[RE,LO]{\thepage}
+
+\begin{document}
+% \tableofcontents
+\titleinf
+\maketitle
+\startmcols
+
+\section{Introduction}
+\section{Background and Methodology}
+
+\section{Lattice-QCD Calculation}
+\subsection{Numerical Simulation}
+\subsection{Extraction of Muon Anomaly}
+\subsection{Lattice Corrections and Continuum Extrapolation}
+
+
+\section{Results}
+\subsection{Light-Quark Connected Contribution}
+\subsection{Isospin-Breaking, Electromagnetic, and Quark-Disconnected Contributions}
+\subsubsection{$\pi\pi$ Corrections}
+\subsubsection{Residual Light-Quark Disconnect Corrections}
+\subsubsection{Residual Strong-Isospin Breaking Corrections}
+\subsubsection{Residual QED Corrections}
+\subsubsection{Total Contribution from $u/d$ Quarks}
+
+\subsection{Total Leading-Order Contribution}
+
+\nocite{*}
+\printbib
+
+\stopmcols
+
+
+\end{document}
+
