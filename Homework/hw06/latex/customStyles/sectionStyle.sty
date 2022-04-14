@@ -1,0 +1,33 @@
+\ProvidesPackage{sectionstyle}
+
+\usepackage{sectsty}
+
+
+\setcounter{secnumdepth}{3}
+\counterwithin{equation}{section}
+\counterwithout{equation}{subsection}
+% \counterwithin{figure}{section}
+% \counterwithin{table}{section}
+
+
+% \sectionfont{\centering\fontsize{10}{15}\selectfont\MakeUppercase}
+% \subsectionfont{\centering\fontsize{10}{15}\selectfont}
+% \subsubsectionfont{\centering\fontsize{10}{15}\selectfont\normalfont\itshape}
+
+% \renewcommand{\thesection}{\Roman{section}}
+% \renewcommand{\thesubsection}{\Alph{subsection}}
+% \renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\sectionfont{\fontsize{10}{15}\selectfont\MakeUppercase}
+\subsectionfont{\fontsize{10}{15}\selectfont}
+\subsubsectionfont{\fontsize{10}{15}\selectfont\normalfont\itshape}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\renewcommand{\thesubsubsection}{\roman{subsubsection}}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+
+\endinput

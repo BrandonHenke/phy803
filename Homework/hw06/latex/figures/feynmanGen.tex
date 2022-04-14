@@ -1,0 +1,57 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz-feynman}
+\begin{document}
+\begin{tikzpicture}
+	% % FIRST DIAGRAM
+	% \begin{feynman}
+	% \vertex (v1);
+	% \vertex [above left=of v1] (i0)  {$e^-$};
+	% \vertex [below left=of v1] (i1) {$e^+$};
+	% \vertex [right=of v1] (v2);
+	% \vertex [above right=of v2] (f0) {$\bar{q}$};
+	% \vertex [below right=of v2] (f1) {$q$};
+	% \diagram* {
+	% (i0) -- [fermion,momentum = $p_1$] (v1),
+	% (i1) -- [anti fermion,momentum = $p_2$] (v1),
+	% (v1) -- [photon, edge label = $\gamma$, momentum' = $q$] (v2),
+	% (v2) -- [anti fermion,momentum = $p_3$] (f0),
+	% (v2) -- [fermion,momentum = $p_4$] (f1),
+	% };
+	% \end{feynman}
+
+
+	% % QCD DIAGRAM FOR PROBLEM 2
+	% \begin{feynman}
+	% 	\vertex (v1);
+	% 	\vertex [above left=of v1] (i0)  {$q$};
+	% 	\vertex [below left=of v1] (i1) {$\bar{q}$};
+	% 	\vertex [right=of v1] (v2);
+	% 	\vertex [above right=of v2] (f0) {$t$};
+	% 	\vertex [below right=of v2] (f1) {$\bar{t}$};
+	% 	\diagram* {
+	% 	(i0) -- [fermion, edge label' = $i$,momentum = $p_1$] (v1),
+	% 	(i1) -- [anti fermion, edge label' = $\bar{k}$, momentum = $p_2$] (v1),
+	% 	(v1) -- [gluon, edge label = $g$, momentum' = $q$] (v2),
+	% 	(v2) -- [anti fermion, edge label' = $j$, momentum = $p_3$] (f0),
+	% 	(v2) -- [fermion, edge label' = $\bar{l}$, momentum = $p_4$] (f1),
+	% 	};
+	% \end{feynman}
+
+	% % QED DIAGRAM FOR PROBLEM 2
+	% \begin{feynman}
+	% 	\vertex (v1);
+	% 	\vertex [above left=of v1] (i0)  {$q$};
+	% 	\vertex [below left=of v1] (i1) {$\bar{q}$};
+	% 	\vertex [right=of v1] (v2);
+	% 	\vertex [above right=of v2] (f0) {$t$};
+	% 	\vertex [below right=of v2] (f1) {$\bar{t}$};
+	% 	\diagram* {
+	% 	(i0) -- [fermion, momentum = $p_1$] (v1),
+	% 	(i1) -- [anti fermion, momentum = $p_2$] (v1),
+	% 	(v1) -- [photon, edge label = $\gamma$, momentum' = $q$] (v2),
+	% 	(v2) -- [anti fermion, momentum = $p_3$] (f0),
+	% 	(v2) -- [fermion, momentum = $p_4$] (f1),
+	% 	};
+	% \end{feynman}
+\end{tikzpicture}
+\end{document}
